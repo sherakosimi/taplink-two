@@ -1,0 +1,76 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0rem 20rem;
+}
+.box {
+    position: relative;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 4rem;
+    padding: 7rem 7rem;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+
+    &__image {
+        width: 30rem;
+        height: 30rem;
+        border-radius: 40rem;
+        object-position: top;
+        object-fit: cover;
+        outline-offset: 2rem;
+    }
+
+    &__shadow {
+        z-index: -1;
+        top: 12rem;
+        left: 27rem;
+        position: absolute;
+        width: 40rem;
+        height: 40rem;
+        border-radius: 40rem;
+        object-position: top;
+        object-fit: cover;
+    }
+
+    &__heading {
+        color: white;
+        &--name {
+            font-size: 8rem;
+        }
+        &--position {
+            font-weight: 400;
+            color: #151e3a;
+            margin-top: 1rem;
+            font-size: 2.5rem;
+            line-height: 140%;
+        }
+
+        &--company {
+            &,
+            &:link,
+            &:visited {
+                color: #151e3a;
+                padding-left: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: #be713d;
+            }
+        }
+    }
+}
+
+.body {
+}

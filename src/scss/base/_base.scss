@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    letter-spacing: 0.1rem;
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    overflow: hidden;
+    font-family: "Arvo", sans-serif;
+    background-image: radial-gradient(
+        circle farthest-corner at 12.3% 19.3%,
+        rgba(85, 88, 218, 1) 0%,
+        rgba(95, 209, 249, 1) 100.2%
+    );
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 10rem 5rem;
+}
+
+::selection {
+    background-color: rgb(49, 49, 49);
+    color: black;
+}
